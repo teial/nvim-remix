@@ -1,0 +1,18 @@
+[package]
+name = "remix"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+remix-solidity = { path = "remix-solidity" }
+nvim-oxi = { version = "0.5.1", features = ["neovim-0-10"] }
+serde_json = "1.0.140"
+
+[patch.crates-io]
+nvim-oxi = { git = "https://github.com/teial/nvim-oxi" }
+nvim-oxi-types = { git = "https://github.com/teial/nvim-oxi" }
+nvim-oxi-api = { git = "https://github.com/teial/nvim-oxi" }
+nvim-oxi-macros = { git = "https://github.com/teial/nvim-oxi" }
